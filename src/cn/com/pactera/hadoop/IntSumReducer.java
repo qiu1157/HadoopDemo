@@ -9,7 +9,6 @@
 package cn.com.pactera.hadoop;
 
 import java.io.IOException;
-
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -23,7 +22,7 @@ import org.apache.hadoop.mapreduce.Reducer;
  */
 public class IntSumReducer extends
 		Reducer<Text, IntWritable, Text, IntWritable> {
-
+	//IntWritable类表示的是一个整数，是一个以类表示的整数，可以序列化
 	IntWritable result = new IntWritable();
 
 	/*
