@@ -19,10 +19,6 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
-import cn.com.pactera.hadoop.IntSumReducer;
-import cn.com.pactera.hadoop.TokenizerMapper;
-import cn.com.pactera.hadoop.WordCount;
-
 /** 
  * @ClassName: ScoreMain 
  * @Description: TODO
