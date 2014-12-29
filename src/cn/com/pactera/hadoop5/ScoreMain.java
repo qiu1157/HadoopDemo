@@ -50,6 +50,7 @@ public class ScoreMain {
 		Job job = new Job(conf,"ScoreMain");
 		job.setJarByClass(ScoreMain.class);
 		job.setMapperClass(ScoreMap.class);
+		job.setCombinerClass(ScoreReduce.class);
 		job.setReducerClass(ScoreReduce.class);
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
@@ -57,5 +58,5 @@ public class ScoreMain {
 		FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
 		System.exit(job.waitForCompletion(true)?0:1);
 	}
-
+//13827429045
 }
