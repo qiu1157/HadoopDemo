@@ -28,7 +28,7 @@ public class STjoinMapper extends Mapper<Object, Text, Text, Text> {
 		String parentName = new String();
 		String relationType = new String();
 		String line = value.toString();
-		StringTokenizer itr = new StringTokenizer(line);
+		StringTokenizer itr = new StringTokenizer(line,"\n");
 		while (itr.hasMoreTokens()) {
 			StringTokenizer tokenLine = new StringTokenizer(itr.nextToken());
 			childName = tokenLine.nextToken();

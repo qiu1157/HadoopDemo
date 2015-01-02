@@ -45,7 +45,6 @@ public class STjoinMain {
 			System.err.println("Usage: STMain<in><out>");
 			System.exit(2);
 		}
-		
 		Job job = new Job(conf,"STMain");
 		job.setJarByClass(STjoinMain.class);
 		job.setMapperClass(STjoinMapper.class);

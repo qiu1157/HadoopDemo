@@ -1,0 +1,12 @@
+﻿Alice	1+Jack 1+Terry
+Alma	1+Philip 1+Mark
+Ben	1+Lucy
+Jack	2+Alice 2+Jesse 1+Tom 1+Jone
+Jesse	1+Jack  1+Terry
+Jone	2+Lucy  2+Jack
+Lucy	1+Tom  1+Jone  2+Mary  2+Ben
+Mark	2+Terry  2+Alma
+Mary	    1+Lucy
+Philip	2+Terry  2+Alma
+Terry	 2+Alice  2+Jesse  1+Philip  1+Mark
+Tom	2+Jack  2+Lucy
