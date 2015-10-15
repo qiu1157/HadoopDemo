@@ -30,7 +30,6 @@ public class STjoinReduce extends Reducer<Text, Text, Text, Text> {
 		// String strtmp = "";
 		for (Text val : values) {
 			// strtmp += val;
-			System.out.println("**********循环开始***********");
 			String record = val.toString();
 			System.out.println("record==" + record);
 			String[] str = record.split("\\+");
@@ -43,7 +42,6 @@ public class STjoinReduce extends Reducer<Text, Text, Text, Text> {
 				grandparent[grandparentnum] = str[1];
 				grandparentnum++;
 			}
-			System.out.println("**********循环结束***********");
 		}
 		if (grandchildnum != 0 && grandparentnum != 0) {
 			for (int i = 0; i < grandchildnum; i++) {
